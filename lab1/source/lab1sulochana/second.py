@@ -8,8 +8,8 @@ for word in list.split():
 
 print("The longest word is %s" % longest_word)
 
-reverse = list[::-1]
-print ("The reverse of a sentence is %s" %reverse)
+reversed_string = ' '.join(w[::-1] for w in list.split())
+print ("the reversed sentence is %s" %reversed_string)
 
 words = list.split() #Forget ()
 len_sentence = len(words)
@@ -19,4 +19,4 @@ if len_sentence%2==0:
     middle.append(words[len_sentence//2])
 else:
     middle.append(words[len_sentence//2])
-print("The middle of a sentence is %s"%middle)
+print("the middle words are %s" % ' '.join(middle))
